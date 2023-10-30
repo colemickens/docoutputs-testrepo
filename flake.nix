@@ -7,7 +7,12 @@
 
            Type: testfunc :: string -> string -> string
         */
-        testfunc = x: y: "${x}-${y}";
+        testfunc =
+          # the cool x paramter
+          x:
+          # the cooler y parameter
+          y:
+          "${x}-${y}";
       };
     };
     lib = {
