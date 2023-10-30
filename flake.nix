@@ -1,5 +1,15 @@
 {
   outputs = _: {
+    /* Group of cool lib functions */
+    lib2 = {
+      lib3 = {
+        /* Test nested func
+
+           Type: testfunc :: string -> string -> string
+        */
+        testfunc = x: y: "${x}-${y}";
+      };
+    };
     lib = {
       /* Conditionally trace the supplied message, based on a predicate.
 
