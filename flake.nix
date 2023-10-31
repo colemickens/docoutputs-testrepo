@@ -14,19 +14,19 @@
         b:
         "${a}-${b}";
 
-      /* lib3 nested group of functions */
-      lib3 = {
-        /* Test nested func
+      # /* lib3 nested group of functions */
+      # lib3 = {
+      #   /* Test nested func
 
-           Type: testfunc :: string -> string -> string
-        */
-        testfunc =
-          # the cool x paramter
-          x:
-          # the cooler y parameter
-          y:
-          "${x}-${y}";
-      };
+      #      Type: testfunc :: string -> string -> string
+      #   */
+      #   testfunc =
+      #     # the cool x paramter
+      #     x:
+      #     # the cooler y parameter
+      #     y:
+      #     "${x}-${y}";
+      # };
     };
 
     /* the OG group of cool functions */
