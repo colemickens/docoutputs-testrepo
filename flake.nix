@@ -3,12 +3,18 @@
   outputs = _: {
     /* Group of cool lib2 functions */
     lib2 = {
+      /* test func in second lib set
+
+         Type: lib2testfunc1 :: string -> string -> string
+      */
       lib2testfunc1 =
         # the cool a paramter
         a:
         # the cooler b parameter
         b:
         "${a}-${b}";
+
+      /* lib3 nested group of functions */
       lib3 = {
         /* Test nested func
 
@@ -22,6 +28,8 @@
           "${x}-${y}";
       };
     };
+
+    /* the OG group of cool functions */
     lib = {
       /* Conditionally trace the supplied message, based on a predicate.
 
