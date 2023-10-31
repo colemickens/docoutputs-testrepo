@@ -1,8 +1,14 @@
 {
   # this is test 4, let's see if it actually copies from github, but I doubt it
   outputs = _: {
-    /* Group of cool lib functions */
+    /* Group of cool lib2 functions */
     lib2 = {
+      lib2testfunc1 =
+        # the cool a paramter
+        a:
+        # the cooler b parameter
+        b:
+        "${a}-${b}";
       lib3 = {
         /* Test nested func
 
