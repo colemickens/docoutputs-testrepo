@@ -1,5 +1,6 @@
 {
   # this is test 4, let's see if it actually copies from github, but I doubt it
+  # trigger new relesae
   outputs = _: {
     /* Group of cool lib2 functions */
     lib2 = {
